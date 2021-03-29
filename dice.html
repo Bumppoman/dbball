@@ -3,8 +3,7 @@
 		<title>Dice Baseball</title>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 		<script type="text/javascript">
-			function roll()
-			{
+			function roll() {
 				// Get random number
 				let random = Math.floor(Math.random() * 5001);
 				
@@ -12,6 +11,10 @@
 				const container = document.getElementById('roll-container');
 				const status = document.getElementById('roll-status');
 				const code = document.getElementById('roll-code');
+				
+				// Reset container
+				container.style.backgroundColor = '#fff';
+				container.style.color = '#000';
 				
 				// Determine roll
 				if (random <= 889) {
