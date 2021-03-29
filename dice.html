@@ -49,21 +49,21 @@
 				setTimeout(() => {
 					container.style.backgroundColor = '#000';
 					container.style.color = '#fff';
-				}, 3000);
+				}, 2000);
 			}
 		</script>
 	</head>
 	<body>
 		<div class="d-flex flex-column h-100">
-			<header class="fs-1 text-center">Dice Baseball</header>
+			<header class="p-3 text-center" style="font-size: 24pt;">Dice Baseball</header>
 			<section class="align-items-center d-flex flex-fill">
-				<div id="roll-container" class="container-fluid text-center">
-					<div id="roll-status" class="fs-1 fw-bold"></div>
+				<div id="roll-container" class="container-fluid p-3 text-center">
+					<div id="roll-status" class="fw-bold" style="font-size: 24pt;">Awaiting roll</div>
 					<div id="roll-code" class="fs-6"></div>
 				</div>
 			</section>
 			<footer class="mt-2 pb-2 text-center" style="height: 15%;">
-				<button class="btn btn-block btn-lg btn-primary h-100" onclick="roll(); return false;" style="width: 95%;">Roll</button>
+				<button class="btn btn-block btn-lg btn-primary h-100" onclick="roll(); return false;" style="font-size: 24pt; width: 95%;">Roll</button>
 			</footer>
 		</div>
 	</body>
